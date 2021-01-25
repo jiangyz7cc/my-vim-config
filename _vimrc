@@ -6,15 +6,15 @@
 "silent! call plug#begin('~/.vim/plugged')
 silent! call plug#begin('$VIM/vimfiles/plugged')
 "Plug 'vim-scripts/DrawIt'
-"Plug 'mattn/emmet-vim'
-"Plug 'neoclide/coc.nvim',{'branch':'release'}
+"Plug 'mattn/emmet-vim', {'for':'html'}
+"Plug 'neoclide/coc.nvim', "{'branch':'release'}
 "Plug 'ludovicchabant/vim-gutentags'
-"Plug 'vim-scripts/taglist.vim'
+"Plug 'vim-scripts/taglist.vim', {'for':['c','c++']}
 "Plug 'jiangmiao/auto-pairs'
-Plug 'SirVer/ultisnips'
+"Plug 'SirVer/ultisnips'
 "Plug 'honza/vim-snippets'
-Plug 'scrooloose/nerdtree',{'on':'NERDTreeToggle'}
-Plug 'scrooloose/nerdcommenter'
+"Plug 'scrooloose/nerdtree',{'on':'NERDTreeToggle'}
+"Plug 'scrooloose/nerdcommenter'
 "Plug 'kshenoy/vim-signature'
 Plug 'junegunn/vim-plug'
 silent! call plug#end()
@@ -33,7 +33,7 @@ source $VIM\jiangyz\script\plugin_config.vim
 "let g:molokai_original=1
 "let g:rehash256=1
 
-cd d:\dev\c
+"cd d:\dev\c
 
 "--set begin--
 "language
@@ -52,7 +52,7 @@ syntax enable
 "window position (left-top)
 "winpos 300 150
 "colorscheme
-color molokai
+"color molokai
 "set noicon
 "set iconstring=d:\software\vim\vimfiles\o.ico
 
