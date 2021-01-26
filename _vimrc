@@ -5,6 +5,8 @@
 "begin() refs plugins location.
 "silent! call plug#begin('~/.vim/plugged')
 silent! call plug#begin('$VIM/vimfiles/plugged')
+Plug 'iamcco/mathjax-support-for-mkdp'
+Plug 'iamcco/markdown-preview.vim'
 "Plug 'vim-scripts/DrawIt'
 "Plug 'mattn/emmet-vim', {'for':'html'}
 "Plug 'neoclide/coc.nvim', "{'branch':'release'}
@@ -16,8 +18,11 @@ silent! call plug#begin('$VIM/vimfiles/plugged')
 "Plug 'scrooloose/nerdtree',{'on':'NERDTreeToggle'}
 "Plug 'scrooloose/nerdcommenter'
 "Plug 'kshenoy/vim-signature'
-Plug 'junegunn/vim-plug'
+"Plug 'junegunn/vim-plug'
 silent! call plug#end()
+
+nnoremap <silent> <leader>mdp <Plug>MarkdownPreview        " for normal mode
+nnoremap <silent> <leader>mds <Plug>StopMarkdownPreview    " for normal mode
 
 "--source file begin--
 source $VIM\jiangyz\script\common.vim
@@ -36,7 +41,6 @@ source $VIM\jiangyz\script\plugin_config.vim
 "cd d:\dev\c
 
 "--set begin--
-"language
 let $LANG='en'
 "set langmenu='en'
 
@@ -53,6 +57,7 @@ syntax enable
 "winpos 300 150
 "colorscheme
 "color molokai
+color desert
 "set noicon
 "set iconstring=d:\software\vim\vimfiles\o.ico
 
